@@ -138,10 +138,30 @@
     <div style="margin: 0 auto; max-width: 970px; display: flex;">
         <nav id="posts" style="width: 970px;">
             <article class="post">
-                <p class="date">2023年8月7日</p>
+                <p class="date">2023年8月7日 15:13</p>
                 <hr>
                 <article lang="ja">
-                    <h2>hsjoihs.dev 開設</h2>
+                    <h2>とりあえず hsjoihs.pages.dev には立った</h2>
+                    <hr>
+                    <p>Cloudflare の Direct Uploads で HTML を直に上げようとしたら、Content-Type が text/html になってくれない。</p>
+                    <p>_headers をいじって上げなおそうとしたら、API が 403 とか言われて再アップロードできない。</p>
+                    <p>しょうがないので、一回プロジェクトを削除して、<a href="https://github.com/sozysozbot/hsjoihs.dev">GitHub にリポジトリを立てたら</a> hsjoihs.pages.dev には立った。</p>
+                    <p>hsjoihs.dev に繋ごうとすると「Firefox はセキュリティ上の潜在的な脅威を検知したため、hsjoihs.dev への接続を中止しました。このウェブサイトには安全な接続が必要なためです。」と言われる。まあそこら辺のセットアップなんもしてないからな。</p>
+                    <p>えーと現状は、Google Domains で持っていて、Cloudflare には移管しきってはいなくてネームサーバーだけ Cloudflare に置いている状態。となると、Google Domains 側に Let's Encrypt かなんかを設定してやる必要がありそう。</p>
+                    <p>certbot ってやつを入れてみた。</p>
+                    <pre>Hint: The Certificate Authority failed to download the challenge files from the temporary standalone webserver started by Certbot on port 80. Ensure that the listed domains point to this machine and that it can accept inbound connections from the internet.
+
+Some challenges have failed.
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile C:\Certbot\log\letsencrypt.log or re-run Certbot with -v for more details.
+                    </pre>
+                    <p>ふ～む。</p>
+                </article>
+            </article>
+            <article class="post">
+                <p class="date">2023年8月7日 14:08</p>
+                <hr>
+                <article lang="ja">
+                    <h2>hsjoihs.dev の開設を狙う</h2>
                     <hr>
                     <p>本日から <a
                             href="https://www.ipa.go.jp/jinzai/security-camp/2023/zenkoku/index.html">セキュリティ・キャンプ2023</a>ですね！
