@@ -138,6 +138,19 @@
     <div style="margin: 0 auto; max-width: 970px; display: flex;">
         <nav id="posts" style="width: 970px;">
             <article class="post">
+                <p class="date">2023年8月7日 15:59</p>
+                <hr>
+                <article lang="ja">
+                    <h2>ドメインを移管するぞ</h2>
+                    <hr>
+                    <p>Cloudflare に移管すると問題が解決しそうな気がしたので、移管をやっていく。</p>
+                    <p>「数時間待たされるかもよ」と言われたが、全然そんなことなく、ちょっと待ったらサクッとできた。</p>
+                    <p>うお～支払い手段追加しなきゃいけないのか。いまクレカが別の部屋にあるんだよな。</p>
+                    <p>えーと Paypal アカウントにログインする権限がある。やってみよう。おや支払いが失敗した。</p>
+                    <p>あー結びついてるクレカが古い。これはしょうがない。一旦待とう。</p>
+                </article>
+            </article>
+            <article class="post">
                 <p class="date">2023年8月7日 15:13</p>
                 <hr>
                 <article lang="ja">
@@ -149,7 +162,7 @@
                     <p>hsjoihs.dev に繋ごうとすると「Firefox はセキュリティ上の潜在的な脅威を検知したため、hsjoihs.dev への接続を中止しました。このウェブサイトには安全な接続が必要なためです。」と言われる。まあそこら辺のセットアップなんもしてないからな。</p>
                     <p>えーと現状は、Google Domains で持っていて、Cloudflare には移管しきってはいなくてネームサーバーだけ Cloudflare に置いている状態。となると、Google Domains 側に Let's Encrypt かなんかを設定してやる必要がありそう。</p>
                     <p>certbot ってやつを入れてみた。</p>
-                    <pre>Hint: The Certificate Authority failed to download the challenge files from the temporary standalone webserver started by Certbot on port 80. Ensure that the listed domains point to this machine and that it can accept inbound connections from the internet.
+                    <pre style="white-space: pre-wrap;">Hint: The Certificate Authority failed to download the challenge files from the temporary standalone webserver started by Certbot on port 80. Ensure that the listed domains point to this machine and that it can accept inbound connections from the internet.
 
 Some challenges have failed.
 Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile C:\Certbot\log\letsencrypt.log or re-run Certbot with -v for more details.
