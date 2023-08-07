@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>hsjoihs.dev</title>
+    <style>
+        nav#posts {
+            margin-right: 10px;
+        }
+
+        article.post {
+            border: 3px solid #005242;
+            padding: 5px 20px;
+            margin: 10px 0;
+        }
+
+        article.post hr {
+            border-top: 2px solid rgb(39, 26, 20);
+        }
+
+        article.post p.date {
+            font-weight: normal;
+            text-align: center;
+        }
+
+        article.post article h2 {
+            font-size: 120%;
+            font-weight: normal;
+        }
+
+        aside#sidebar {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        aside#sidebar>* {
+            border: 2px solid rgb(39, 26, 20);
+
+        }
+
+        div#calendar-navigation {
+            display: flex;
+            justify-content: space-between;
+            padding-inline-start: 10px;
+            padding-inline-end: 10px;
+            padding-top: 5px;
+        }
+
+        div.calendar-button {
+            background-color: #005242;
+            color: white;
+            font-weight: bold;
+            padding: 2px;
+            width: 26px;
+            height: 26px;
+            border-radius: 15px;
+            vertical-align: middle;
+        }
+
+        @font-face {
+            font-family: 'cirlipa';
+            src: url('https://sozysozbot.github.io/fonts/cirlxarli_liparxe_1.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'pektak';
+            src: url('https://sozysozbot.github.io/fonts/pek_tak.woff') format('woff');
+        }
+
+        :lang(x-lineparine) {
+            font-family: 'cirlipa';
+        }
+
+        a:lang(x-lineparine) {
+            text-decoration: none;
+            /* f とかのディセンダーと衝突して読みづらい */
+            font-weight: bold;
+        }
+
+        :lang(x-pemecepe) {
+            font-family: 'pektak';
+        }
+
+        .header-logo-container {
+            display: flex;
+        }
+
+        img.glyph {
+            filter: brightness(65%) contrast(500%);
+            vertical-align: middle;
+        }
+
+        .header-genres-container>ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bold;
+            font-size: 80%;
+            padding-inline-start: 40px;
+            padding-inline-end: 40px;
+        }
+
+        .header-genres-container>ul>li {
+            position: relative;
+            text-align: center;
+        }
+
+        .header-genres-container>ul>li:hover {
+            color: #005242;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="margin: 0 auto; max-width: 970px;">
+        <div class="header-logo-container">
+            <img src="https://pbs.twimg.com/profile_images/876768132525719552/ZCUSslij_400x400.jpg" width="60"
+                height="60" style="margin-right: 10px; border-radius: 50%;" />
+            <div>
+                <div lang="ja" style="font-size: 135%">hsjoihs.dev</div>
+                <div lang="ja" style="font-size: 90%">はすじょいという名前でインターネットをやっています。よろしくお願いします。</div>
+            </div>
+        </div>
+        <hr>
+        <div class="header-genres-container">
+            <ul lang="ja">
+                <li><a href="https://twitter.com/hsjoihs">Twitter (X) (ﾊﾟｿｺﾝｶﾀｶﾀ)</a></li>
+                <li><a href="https://twitter.com/hsjoihs">Twitter (X) (言語とか)</a></li>
+                <li><a href="https://hsjoihs.hatenablog.com/">はてなブログ</a></li>
+                <li><a href="https://logmi.jp/tech/articles/328521">C コンパイラ縛り実況</a></li>
+                <li><a href="https://logmi.jp/tech/articles/328507">異世界言語OS/架空伝統ゲーム「机戦」</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <div style="margin: 0 auto; max-width: 970px; display: flex;">
+        <nav id="posts" style="width: 970px;">
+            <article class="post">
+                <p class="date">2023年8月7日</p>
+                <hr>
+                <article lang="ja">
+                    <h2>hsjoihs.dev 開設</h2>
+                    <hr>
+                    <p>本日から <a
+                            href="https://www.ipa.go.jp/jinzai/security-camp/2023/zenkoku/index.html">セキュリティ・キャンプ2023</a>ですね！
+                    </p>
+                    <p>さて、今日のために名刺を大量に刷ってきたのですが、</p>
+                    <blockquote class="twitter-tweet">
+                        <p lang="ja" dir="ltr">若干名刺を印刷しすぎた疑いがある <a
+                                href="https://t.co/57w25z2hB7">pic.twitter.com/57w25z2hB7</a></p>&mdash; はすじょい (hsjoihs)
+                        (@hsjoihs) <a
+                            href="https://twitter.com/hsjoihs/status/1687768476323311616?ref_src=twsrc%5Etfw">August 5,
+                            2023</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <p>そこに載せている hsjoihs.dev という URL にサイトを立てておくのをすっかりサボっていたので、いま急ピッチで立てています。よろしくお願いします。</p>
+                </article>
+            </article>
+        </nav>
+    </div>
+</body>
+</html>
